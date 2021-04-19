@@ -8331,11 +8331,11 @@ textarea.form-control {
   .btn:hover, .btn:active, .btn:focus {
     outline: none; }
   .btn.btn-primary {
-    background: #fbceb5 !important;
-    border: 1px solid #fbceb5 !important;
+    background: #fffffe !important;
+    border: 1px solid #d6d6d6 !important;
     color: #000 !important; }
     .btn.btn-primary:hover {
-      border: 1px solid #fbceb5;
+      border: 1px solid #d8ca00;
       background: transparent;
       color: #fbceb5; }
     .btn.btn-primary.btn-outline-primary {
@@ -8344,5 +8344,5 @@ textarea.form-control {
       color: #fbceb5; }
       .btn.btn-primary.btn-outline-primary:hover {
         border: 1px solid transparent;
-        background: #fbceb5;
+        background: #b5fbd8;
         color: #fff; }
