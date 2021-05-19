@@ -6,7 +6,7 @@
 [ FONT ]*/
 
 @font-face {
-  font-family: Varela-Round, sans-serif;
+  font-family: 'Varela Round', sans-serif;
   src: url('../fonts.googleapis.com/css2? family = Varela + Round & display = swap'); 
 }
 
@@ -56,7 +56,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 p {
-	font-family: Varela-Round, sans-serif;
+	font-family: 'Varela Round', sans-serif;
 	font-size: 14px;
 	line-height: 1.7;
 	color: #666666;
@@ -114,15 +114,15 @@ iframe {
 /*//////////////////////////////////////////////////////////////////
 [ Utility ]*/
 .txt1 {
-  font-family: Nunito, sans-serif;
-  font-size: 16px;
+  font-family: 'Varela Round', sans-serif;
+  font-size: 18px;
   line-height: 1.4;
   color: #fff;
 }
 
 .txt2 {
-  font-family: SourceSansPro-Regular;
-  font-size: 16px;
+  font-family: 'Varela Round', sans-serif;
+  font-size: 18px;
   line-height: 1.4;
   color: #fff;
 }
@@ -215,8 +215,8 @@ iframe {
 }
 
 .input100 {
-  font-family: Varela-Round, sans-serif;
-  font-size: 16px;
+  font-family: 'Varela Round', sans-serif;
+  font-size: 17px;
   color: #fff;
   line-height: 1.2;
   background: rgba(255, 255, 255, 0.384);
@@ -288,11 +288,10 @@ iframe {
   background-color:transparent;
   border-radius: 25px;
 
-  font-family: SourceSansPro-SemiBold;
-  font-size: 14px;
+  font-family: 'Varela Round', sans-serif;
+  font-size: 18px;
   color: #fff;
   line-height: 1.2;
-  text-transform: uppercase;
   opacity: 1;
 
   -webkit-transition: all 0.4s;
@@ -350,15 +349,15 @@ iframe {
   padding: 0 45px 0 22px;
   pointer-events: none;
 
-  font-family: SourceSansPro-Bold;
-  font-size: 16px;
+  font-family: 'Varela Round', sans-serif;
+  font-size: 18px;
   color: #fa1b2d;
   line-height: 1.2;
 }
 
 .btn-hide-validate {
   font-family: Material-Design-Iconic-Font;
-  font-size: 15px;
+  font-size: 18px;
   color: #fa1b2d;
   cursor: pointer;
   display: -webkit-box;
@@ -381,7 +380,7 @@ iframe {
 .true-validate::after {
   content: "\f269";
   font-family: Material-Design-Iconic-Font;
-  font-size: 15px;
+  font-size: 18px;
   color: #57b846;
   display: -webkit-box;
   display: -webkit-flex;
