@@ -55,7 +55,7 @@
           <li><a class="nav-link scrollto active" href="#hero">Inicio</a></li>
           <li><a class="nav-link scrollto" href="#about">Sobre</a></li>
           <li><a class="nav-link scrollto" href="#como_funciona">Como funciona</a></li>
-          <li><a class="btn-get-started" href="#">Cadastre-se</a></li>
+          <li><a class="btn-get-started" href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Cadastre-se</a></li>
           <li><a class="btn-get-started" href="#">Entrar</a></li>
         <ul>
         
@@ -68,7 +68,7 @@
     <div class="hero-container" data-aos="zoom-in" data-aos-delay="100">
       <h1>Bem-vindo ao Outbreak</h1>
       <h2>Um site de narrativas que vai te levar para outro mundo</h2>
-      <a href="#" class="btn-get-started">Inicie suas Narrativas</a>
+      <a href="#" class="btn-get-started" href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Inicie suas Narrativas</a>
     </div>
   </section><!-- End Hero Section -->
 
@@ -135,6 +135,29 @@
   </footer><!-- End Footer -->
 
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+
+  
+    <!--------------- Modal de cadastro ----------------------->
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            ...
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Understood</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!------Adicione outros modais para seus interesses-->
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/aos/aos.js"></script>
