@@ -23,15 +23,23 @@
 			<div class="row justify-content-center">
 				<div class="col-md-6 col-lg-4">
 					<div class="login-wrap p-0">
-		      	<h3 class="mb-4 text-center">Tem uma conta?</h3>
+		      	<h3 class="mb-4 text-center">Não tem uma conta?</h3>
 		      	<form action="#" class="signin-form">
 		      		<div class="form-group">
-		      			<input type="text" class="form-control" placeholder="Nome do usuário" required>
+		      			<input type="text" class="form-control" placeholder="Email" required>
 		      		</div>
+					  <form action="#" class="signin-form">
+						<div class="form-group">
+							<input type="text" class="form-control" placeholder="Nome do usuário" required>
+						</div>
 	            <div class="form-group">
 	              <input id="password-field" type="password" class="form-control" placeholder="Senha" required>
 	              <span toggle="#password-field" class="fa fa-fw fa-eye field-icon toggle-password"></span>
 	            </div>
+				<div class="form-group">
+					<input id="password-field" type="password" class="form-control" placeholder="Confirmação de senha" required>
+					<span toggle="#password-field" class="fa fa-fw fa-eye field-icon toggle-password"></span>
+				  </div>
 	            <div class="form-group">
 	            	<button type="submit" class="form-control btn btn-primary submit px-3">Entrar</button>
 	            </div>
