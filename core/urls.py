@@ -1,13 +1,13 @@
 
 from django.urls import path
-from .views import HomeView, LoginView, RegisterView, FeedView, CreateNarrative, ListNarrative, DetailNarrative, UpdateView, DeleteNarrative
+from .views import HomeView, LoginView, RegisterView, ProfileView, CreateNarrative, ListNarrative, DetailNarrative, UpdateView, DeleteNarrative
 
 urlpatterns = [
     #common pages 
     path('', HomeView.as_view(), name = 'home'),
     path('login/', LoginView.as_view(), name = 'login' ),
     path('register/', RegisterView.as_view(), name = 'register'),
-    path('profile', FeedView.as_view(), name = 'profile' ),
+    path('profile', ProfileView.as_view(), name = 'profile' ),
     # CRUD pages
     path('create-narrative/', CreateNarrative.as_view(), name = 'create-narrative' ),
     path('update-narrative/:<int:pk>', UpdateView.as_view(), name = 'update-narrative'),

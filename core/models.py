@@ -18,34 +18,34 @@ class Story(Base):
         ('2', 'adventure'),
     )
     TARGET_AUDIENCE = (
-        ('1', '8-13 anos de idade')
-        ('2', '13-18 anos de idade')
+        ('1', '8-13 anos de idade'),
+        ('2', '13-18 anos de idade'),
     )
     image = models.ImageField('imagem', null = False, blank = False)
     title = models.CharField('título', max_length = 100, null = False, blank = False)
     description = models.CharField('descrição', max_length = 500, null = False, blank = False)
-    category = models.CharField('categoria', choices= CATEGORY)
-    target_audience = models.CharField('público-alvo', choices= TARGET_AUDIENCE)
-    language = models.CharField('idioma', choices=())
-    copyright = models.CharField('direitos autorais', choices=())
-    rating = models.CharField('avaliação', choices=())    
-    story_status = models.CharField('história completa?', choices=())
-    permission = models.CharField('permissão para publicar', choices=())
+    category = models.CharField('categoria', max_length = 100, choices= CATEGORY)
+    target_audience = models.CharField('público-alvo', max_length = 100, choices= TARGET_AUDIENCE)
+    language = models.CharField('idioma', max_length = 100, choices=())
+    copyright = models.CharField('direitos autorais', max_length = 100, choices=())
+    rating = models.CharField('avaliação', max_length = 100, choices=())    
+    story_status = models.CharField('história completa?', max_length = 100, choices=())
+    permission = models.CharField('permissão para publicar',max_length = 100, choices=())
     
 
 
 class MainCharacter(models.Model):
     name = models.CharField('personagem', max_length= 100, null = False, blank = False)
-    story = models.ForeignKey(Story)
+    story = models.ForeignKey(Story, on_delete = models.CASCADE)
 
 class Tags(models.Model):
     title = models.CharField('tag', max_length= 50, null = False, blank = False)
-    story = models.ForeignKey(Story)
+    story = models.ForeignKey(Story, on_delete = models.CASCADE)
     
 class Chapter(models.Model):
     title_chapter = models.CharField('título do capítulo', max_length= 100, null= False, blank= False)
     content = models.TextField('conteúdo', null= False, blank= False)
-    story = models.ForeignKey(Story)
+    story = models.ForeignKey(Story, on_delete = models.CASCADE)
 
 
 class Profile(models.Model):
