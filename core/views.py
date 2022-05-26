@@ -12,8 +12,8 @@ class LoginView(TemplateView):
 class RegisterView(TemplateView):
     template_name = 'register.html'
     
-class FeedView(TemplateView):
-    template_name = 'feed.html'
+class ProfileView(TemplateView):
+    template_name = 'profile.html'
 
 class CreateNarrative(CreateView):
     models = ''

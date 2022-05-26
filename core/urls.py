@@ -7,7 +7,7 @@ urlpatterns = [
     path('', HomeView.as_view(), name = 'home'),
     path('login/', LoginView.as_view(), name = 'login' ),
     path('register/', RegisterView.as_view(), name = 'register'),
-    path('feed', FeedView.as_view(), name = 'feed' ),
+    path('profile', FeedView.as_view(), name = 'profile' ),
     # CRUD pages
     path('create-narrative/', CreateNarrative.as_view(), name = 'create-narrative' ),
     path('update-narrative/:<int:pk>', UpdateView.as_view(), name = 'update-narrative'),
