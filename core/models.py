@@ -46,3 +46,8 @@ class Chapter(models.Model):
     title_chapter = models.CharField('título do capítulo', max_length= 100, null= False, blank= False)
     content = models.TextField('conteúdo', null= False, blank= False)
     story = models.ForeignKey(Story)
+
+
+class Profile(models.Model):
+    pass
+
