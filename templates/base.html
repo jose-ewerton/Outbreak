@@ -8,15 +8,22 @@
     {% block title %}
     <title>OutBreak</title>
     {% endblock title %}
+    <link rel="stylesheet" href="{% static 'main.css' %}">
   </head>
   <body>
     <!--Aqui vai o cebeçalho da página-->
-    {% block header %} {% endblock header %}
+    {% block header %} 
+    <div>Header</div>
+    {% endblock header %}
     <!--Aqui vai o conteúdo da página-->
     {% block content%}
     <h1>Essa é a base</h1>
     {% endblock content %} 
     <!--Aqui vai o rodapé da página-->
-    {% block footer %} {% endblock footer %}
+    {% block footer %} 
+    <div>Footer</div>
+    {% endblock footer %}
+
+    <script src="{% static 'main.js'%}"></script>
   </body>
 </html>
