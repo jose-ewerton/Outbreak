@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from django.views.generic import TemplateView, CreateView, ListView, DetailView
+from django.views.generic import TemplateView, CreateView, ListView, DetailView, UpdateView, DeleteView
 
 # Create your views here.
 
@@ -13,7 +13,7 @@ class RegisterView(TemplateView):
     template_name = 'register.html'
     
 class FeedView(TemplateView):
-    template_name = 'feed.hml'
+    template_name = 'feed.html'
 
 class CreateNarrative(CreateView):
     models = ''
@@ -22,7 +22,17 @@ class CreateNarrative(CreateView):
 class ListNarrative(ListView):
     model = ''
 
+class UpdateNarrative(UpdateView):
+    model = ''
+    fields = []
+    #redirecionamento
+    success_url = '/'
+
 class DetailNarrative(DetailView):
     models = ''
+
+class DeleteNarrative(DeleteView):
+    model = ''
+    success_url = '/'
 
 
