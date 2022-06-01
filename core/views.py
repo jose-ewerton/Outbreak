@@ -14,6 +14,9 @@ class RegisterView(TemplateView):
     
 class ProfileView(TemplateView):
     template_name = 'profile.html'
+    
+class FeedView(TemplateView):
+    template_name = 'feed.html'
 
 class CreateNarrative(CreateView):
     models = ''
