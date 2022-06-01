@@ -5,22 +5,27 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!---Acrescentar o favicon do Outbreak-->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <!--Lembrar que talvez precise usar bootstrap icons-->
+
     {% block title %}
     <title>OutBreak</title>
     {% endblock title %}
-    <link rel="stylesheet" href="{% static 'main.css' %}">
+    <link rel="stylesheet" href="{% static 'main.css' %}" />
   </head>
   <body>
     <!--Aqui vai o cebeçalho da página-->
-    {% block header %} 
+    {% block header %}
     <div>Header</div>
     {% endblock header %}
     <!--Aqui vai o conteúdo da página-->
     {% block content%}
     <h1>Essa é a base</h1>
-    {% endblock content %} 
+    {% endblock content %}
     <!--Aqui vai o rodapé da página-->
-    {% block footer %} 
+    {% block footer %}
     <div>Footer</div>
     {% endblock footer %}
 
