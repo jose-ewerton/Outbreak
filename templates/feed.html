@@ -1,16 +1,35 @@
-{% extends 'base.html' %} {% load static %} {% block header %}
+{% extends 'base.html' %} {% load static %}
+
 <!-- Header-->
-<div class="container-fluid">
-  <header class="row" id="header"></header>
-  <div class="logo-container">
-    <img src="img/" alt="OutBreak" class="logo" />
+{% block header %}
+<header>
+  <div class="sidebar">
+    <div class="sidebar-header">
+      <div class="sidebar-logo-container">
+        <div class="logo-container">
+          <img src="{% static 'img/favicon.png' %}" alt="Outbreak" />
+        </div>
+        <div class="profile-name-container">
+          <p class="profile-name">User</p>
+        </div>
+      </div>
+    </div>
+    <div class="sidebar-body">
+      <div class="navigation-list">
+        <div class="navigation-list-item">
+          <a href="#">Categorias</a>
+        </div>
+      </div>
+    </div>
   </div>
-</div>
-<!-- End Header-->
+</header>
 {% endblock header %}
+<!-- End Header -->
 
-<!--block content-->
+<!-- Content-->
 {% block content%}
-
-<h1>Essa é a tela Feed</h1>
-{% endblock content%}
+<div class="content">
+  <h1>Teste</h1>
+</div>
+{% endblock content %}
+<!-- End Content-->
