@@ -2,101 +2,98 @@
 
 <!-- Header-->
 {% block header %}
-    <div class="page">
-        <div class="sidebar">
-            <div class="sidebar-header">
-                <div class="sidebar-logo-container">
-                    <div class="logo-container">
-                        <img class="logo-sidebar" src="{% static 'img/favicon.png' %}" />
-                    </div>
-                    <div class="brand-name-container">
-                        <p class="brand-name">
-                            Futuric<br />
-                            <span class="brand-subname">
-                                Workspace
-                            </span>
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="sidebar-body">
-                <ul class="navigation-list">
-                    <li class="navigation-list-item active">
-                        <a class="navigation-link" href="/">
-                            <div class="row">
-                                <div class="col-2">
-                                    <i class="fas fa-tachometer-alt"></i>
-                                </div>
-                                <div class="col-9">
-                                    Categorias
-                                </div>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="navigation-list-item">
-                        <a class="navigation-link" href="/">
-                            <div class="row">
-                                <div class="col-2">
-                                    <i class="fas fa-users"></i>
-                                </div>
-                                <div class="col-9">
-                                    Minhas Narrativas
-                                </div>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="navigation-list-item">
-                        <a class="navigation-link" href="/">
-                            <div class="row">
-                                <div class="col-2">
-                                    <i class="fas fa-comments"></i>
-                                </div>
-                                <div class="col-9">
-                                    Sobre Narrativas
-                                </div>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="navigation-list-item">
-                        <a class="navigation-link" href="/">
-                            <div class="row">
-                                <div class="col-2">
-                                    <i class="fas fa-chart-pie"></i>
-                                </div>
-                                <div class="col-9">
-                                    Feedbrack
-                                </div>
-                            </div>
-                        </a>
-                    </li>
-                </ul>
-              
-            </div>
+<div class="page">
+  <div class="sidebar">
+    <div class="sidebar-header">
+      <div class="sidebar-logo-container">
+        <div class="logo-container">
+          <img class="logo-sidebar" src="{% static 'img/favicon.png' %}" />
         </div>
-        
-        <div class="content">
-            <div class="navigationBar">
-                <button id="sidebarToggle" class="btn sidebarToggle">
-                    <i class="fas fa-bars"></i>
-                </a>
-            </div>
+        <div class="brand-name-container">
+          <p class="brand-name">
+            User<br />
+            <span class="brand-subname"> Perfil </span>
+          </p>
         </div>
-
+      </div>
     </div>
- 
-    <script>
-        let sidebarToggle = document.querySelector(".sidebarToggle");
-        sidebarToggle.addEventListener("click", function(){
-            document.querySelector("body").classList.toggle("active");
-            document.getElementById("sidebarToggle").classList.toggle("active");
-        })
-    </script>
+    <div class="sidebar-body">
+      <ul class="navigation-list">
+        <li class="navigation-list-item active">
+          <a class="navigation-link" href="/">
+            <div class="row">
+              <div class="col-2">
+                <i class="fas fa-tachometer-alt"></i>
+              </div>
+              <div class="col-9">Categorias</div>
+            </div>
+          </a>
+        </li>
+        <li class="navigation-list-item">
+          <a class="navigation-link" href="/">
+            <div class="row">
+              <div class="col-2">
+                <i class="fas fa-users"></i>
+              </div>
+              <div class="col-9">Minhas Narrativas</div>
+            </div>
+          </a>
+        </li>
+        <li class="navigation-list-item">
+          <a class="navigation-link" href="/">
+            <div class="row">
+              <div class="col-2">
+                <i class="fas fa-comments"></i>
+              </div>
+              <div class="col-9">Sobre Narrativas</div>
+            </div>
+          </a>
+        </li>
+        <li class="navigation-list-item">
+          <a class="navigation-link" href="/">
+            <div class="row">
+              <div class="col-2">
+                <i class="fas fa-chart-pie"></i>
+              </div>
+              <div class="col-9">Feedbrack</div>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <header class="header-container">
+    <div class="navigationBar">
+      <button id="sidebarToggle" class="btn sidebarToggle">
+        <i class="fas fa-bars"></i>
+      </button>
+      <ul class="nav nav-pills">
+        <li class="nav-item">
+          <a href="#" class="nav-link" aria-current="page">Outbreak</a>
+        </li>
+        <li class="nav-item">
+          <i class="fa-solid fa-pen-circle"></i>
+          <a href="#" class="nav-link" aria-current="page">Escreva</a>
+        </li>
+      </ul>
+    </div>
+  </header>
+</div>
+
+<script>
+  let sidebarToggle = document.querySelector(".sidebarToggle");
+  sidebarToggle.addEventListener("click", function () {
+    document.querySelector("body").classList.toggle("active");
+    document.getElementById("sidebarToggle").classList.toggle("active");
+  });
+</script>
 {% endblock header %}
 <!-- End Header -->
 
 <!-- Content-->
 {% block content%}
-<div class="content">
+<div class="container">
   <h1>Teste</h1>
 </div>
 {% endblock content %}

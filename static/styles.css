@@ -31,12 +31,29 @@ body {
   overflow-x: hidden;
   transition: all 0.3s ease;
 }
-.page .content {
+
+.page .header-container {
   margin-left: 250px;
   transition: all 0.3s ease;
 }
+
+.nav {
+  background-color: rgb(153, 58, 58);
+  margin: 0 auto;
+  justify-content: space-around;
+  width: 90%;
+}
+
+.nav-link {
+  color: rgb(255, 255, 255, 0.7);
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-size: 20px;
+}
+
 .navigationBar {
-  background-color: white;
+  background: linear-gradient(35deg, #66fcf1, #45a29e);
   height: 50px;
   display: flex;
   padding: 38px 0px;
@@ -60,7 +77,7 @@ body {
 .sidebarToggle:hover {
   color: white;
 }
-.page .content .container {
+.page .header-container .container {
   margin: 30px;
   background: #fff;
   padding: 50px;
@@ -69,7 +86,7 @@ body {
 body.active .page .sidebar {
   left: -250px;
 }
-body.active .page .content {
+body.active .page .header-container {
   margin-left: 0;
   width: 100%;
 }
@@ -145,29 +162,4 @@ body.active .page .content {
 .navigation-list-item.active .navigation-link {
   color: rgb(255, 255, 255, 0.8);
   font-weight: 500;
-}
-.teams-title-container {
-  padding-left: 30px;
-  margin-top: 25px;
-  margin-bottom: 25px;
-}
-.teams-title {
-  letter-spacing: 0.5px;
-  font-size: 17px;
-  color: rgb(31, 40, 51, 0.8);
-  font-family: "Roboto", sans-serif;
-}
-.teams-list {
-  padding-left: 32px;
-  list-style-type: none;
-}
-.teams-item {
-  letter-spacing: 0.5px;
-  font-size: 16px;
-  color: rgb(31, 40, 51, 0.8);
-  font-family: "Roboto", sans-serif;
-  margin-bottom: 30px;
-}
-.teams-item i {
-  font-size: 12px;
 }
