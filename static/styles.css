@@ -21,7 +21,7 @@ body {
   background-color: #e6e6e6;
 }
 .page .sidebar {
-  background: linear-gradient(35deg, #66fcf1, #45a29e);
+  background: linear-gradient(35deg, rebeccapurple, rgb(86, 12, 160));
   position: fixed;
   top: 0;
   left: 0;
@@ -33,26 +33,13 @@ body {
 }
 
 .page .header-container {
+  background-color: rebeccapurple;
   margin-left: 250px;
   transition: all 0.3s ease;
 }
 
-.nav {
-  margin: 0 auto;
-  justify-content: space-around;
-  width: 90%;
-}
-
-.nav-link {
-  color: rgb(255, 255, 255, 0.7);
-  font-family: "Roboto", sans-serif;
-  font-weight: bold;
-  letter-spacing: 1px;
-  font-size: 20px;
-}
-
 .navigationBar {
-  background: linear-gradient(35deg, #66fcf1, #45a29e);
+  background: linear-gradient(35deg, rebeccapurple, rgb(86, 12, 160));
   height: 50px;
   display: flex;
   padding: 38px 0px;
@@ -70,6 +57,7 @@ body {
   outline: none !important;
   box-shadow: none !important;
 }
+
 .sidebarToggle.active {
   margin-left: 10px;
 }
@@ -130,20 +118,24 @@ body.active .page .header-container {
   padding: 0px 18px;
   margin-top: 30px;
 }
+.nav-item,
 .navigation-list-item {
   padding: 12px 18px 12px 25px;
   margin: 15px 0px;
   border-radius: 8px;
 }
+.nav-item,
 .navigation-list-item:hover {
   background: rgb(0, 0, 0, 0.05);
   box-shadow: 0 0 0.4em rgb(255, 255, 255, 0.1);
   cursor: pointer;
 }
+.nav-item,
 .navigation-list-item.active {
   background: rgb(0, 0, 0, 0.1);
   box-shadow: 0 0 0.4em rgb(255, 255, 255, 0.1);
 }
+.nav-link,
 .navigation-link {
   color: rgb(31, 40, 51, 0.8);
   letter-spacing: 0.5px;
@@ -152,12 +144,15 @@ body.active .page .header-container {
   font-size: 16px;
   font-family: "Roboto", sans-serif;
 }
+
 .navigation-link i {
   font-size: 18px;
 }
+.nav-link,
 .navigation-list-item:hover .navigation-link {
   color: rgb(255, 255, 255, 0.7);
 }
+.nav-link,
 .navigation-list-item.active .navigation-link {
   color: rgb(255, 255, 255, 0.8);
   font-weight: 500;
